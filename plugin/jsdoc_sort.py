@@ -1,4 +1,4 @@
-# import vim
+import vim
 import re;
 
 class JsdocSorter(object):
@@ -50,4 +50,4 @@ class JsdocSorter(object):
             if '/**' == line.strip():
                 self.parse_doc(i + 1)
 
-# JsdocSorter(vim).sort()
+JsdocSorter(vim).sort()

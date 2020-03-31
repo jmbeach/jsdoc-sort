@@ -4,6 +4,6 @@ if !has('python') && !has('python3')
 	finish
 endif
 
-function! CsharpSort()
+function! JsdocSort()
 	execute (has('python3') ? 'py3file' : 'pyfile') g:jsdoc_sort_path
 endfunction
